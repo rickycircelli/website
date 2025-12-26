@@ -1,20 +1,25 @@
 export default function Home() {
   return (
-    <main className="min-h-screen p-10 bg-zinc-50">
-      <h1 className="text-4xl font-bold text-black">
-        Ricky Circelli
-      </h1>
+    <section>
+      <h1 className="text-3xl text-[var(--fg)]">Ricky Circelli</h1>
 
-      <p className="mt-4 text-lg text-zinc-700 max-w-xl">
-        Finance + Data Science student athlete building applied fintech,
-        credit risk, and analytics projects.
+      <p className="mt-4 max-w-xl text-sm leading-6 text-[var(--muted)]">
+        Finance + Data Science student athlete building applied fintech, credit risk, and analytics projects.
+      
       </p>
 
-      <div className="mt-6 flex gap-6">
-        <a className="underline" href="/projects">Projects</a>
-        <a className="underline" href="https://github.com/rickycircelli">GitHub</a>
-        <a className="underline" href="https://www.linkedin.com/in/richardcircelli/">LinkedIn</a>
+      <div className="mt-8 space-y-3 text-sm">
+        <div className="border-l border-[var(--border)] pl-4">
+          <p className="text-[var(--fg)]">Focus</p>
+          <p className="mt-1 text-[var(--muted)]">Credit risk • alternative data • portfolio optimization • dashboards</p>
+        </div>
+
+        <div className="border-l border-[var(--border)] pl-4">
+          <p className="text-[var(--fg)]">Currently</p>
+          <p className="mt-1 text-[var(--muted)]">Building and documenting projects while competing for South Carolina Men's Track and Field.</p>
+        </div>
+
       </div>
-    </main>
+    </section>
   );
 }

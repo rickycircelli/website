@@ -1,26 +1,52 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Terminal-inspired dark */
+  --bg: #0b0f0d;
+  --panel: #0f1512;
+  --fg: #e7efe9;
+  --muted: #9aa7a0;
+
+  /* Sage green accent */
+  --accent: #8faf9a;
+  --accent-muted: #6f8f7a;
+
+  --border: rgba(231, 239, 233, 0.12);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+::selection {
+  background: rgba(143, 175, 154, 0.28);
+}
+
+a {
+  text-underline-offset: 3px;
+}
+
+a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+header a {
+  color: var(--fg);
+}
+
+header a:hover {
+  color: var(--accent);
 }
