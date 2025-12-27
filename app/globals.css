@@ -18,7 +18,14 @@
 
 html,
 body {
+<<<<<<< HEAD
   height: 100%;
+=======
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+>>>>>>> d8dc5f3 (Reconnect repo and add resume)
 }
 
 body {
@@ -50,3 +57,39 @@ header a {
 header a:hover {
   color: var(--accent);
 }
+<<<<<<< HEAD
+=======
+
+header a.nav-resume {
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-decoration-color: rgba(143, 175, 154, 0.45);
+  text-underline-offset: 4px;
+}
+
+header a.nav-resume:hover {
+  color: var(--accent);
+  opacity: 0.9;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.accent-muted {
+  color: var(--accent);
+  opacity: 0.75;
+}
+.emphasis {
+  font-weight: 500;
+  color: var(--fg);
+}
+
+.emphasis-accent {
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+>>>>>>> d8dc5f3 (Reconnect repo and add resume)
