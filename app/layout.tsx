@@ -26,11 +26,6 @@ export default function RootLayout({
 
           <nav className="flex items-center gap-8 text-sm max-[640px]:flex-wrap max-[640px]:gap-x-6 max-[640px]:gap-y-2">
            
-<<<<<<< HEAD
-            <Link href="/projects">projects</Link>
-            <span className="mx-3 text-[var(--muted)]">•</span>
-            <Link href="/about">about</Link>
-=======
             <a
               href="/resume/ricky_circelli_resume.pdf"
               target="_blank"
@@ -41,7 +36,6 @@ export default function RootLayout({
             </a>
             <span className="mx-3 text-[var(--muted)]">•</span>
             <Link href="/projects">projects</Link>
->>>>>>> d8dc5f3 (Reconnect repo and add resume)
             <span className="mx-3 text-[var(--muted)]">•</span>
             <a href="https://github.com/rickycircelli" target="_blank" rel="noopener noreferrer">github</a>
             <span className="mx-3 text-[var(--muted)]">•</span>
