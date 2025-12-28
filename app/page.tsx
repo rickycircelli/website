@@ -1,5 +1,6 @@
 import Spacer from "./components/Spacer";
-
+import SkillBar from "./components/SkillBar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,9 +8,14 @@ export default function Home() {
       
     {/* HERO command */}
     <p className="text-sm text-[var(--muted)]">
-      <span className="opacity-80">ricky@rickycircelli</span>
-      <span className="opacity-60">:~$</span>{" "}
-      <span className="text-[var(--fg)]">whoami</span>
+    <Link
+      href="/"
+      className="opacity-80 hover:text-[var(--accent)] transition-colors"
+    >
+      ricky@rickycircelli
+    </Link>
+    <span className="opacity-60">:~$</span>{" "}
+    <span className="text-[var(--fg)]">whoami</span>
     </p>
 
     {/* HERO output */}
@@ -19,14 +25,13 @@ export default function Home() {
       </h1>
 
       <p className="mt-2 text-sm text-[var(--muted)]">
-        role=<span className="text-[var(--fg)]">student-athlete</span>{" "}
+        role=<a href="https://gamecocksonline.com/sports/track/roster/player/ricky-circelli/" className="text-[var(--fg)] hover:text-[var(--accent)]">
+              student-athlete
+            </a>{" "}
         | focus=<span className="text-[var(--fg)]">finance</span>{" "}
         | focus=<span className="text-[var(--fg)]">data-science</span>
       </p>
     </div>
-
-
-
 
       {/* LINKS command */}
       <p className="text-sm text-[var(--muted)]">
@@ -35,7 +40,6 @@ export default function Home() {
         <span className="text-[var(--fg)]">ls</span>{" "}
         links/
       </p>
-
 
       {/* LINKS output */}
       <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4">
@@ -99,7 +103,6 @@ export default function Home() {
         <span className="opacity-60">:~$</span> status
       </p>
 
-
       {/* STATUS output */}
       <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4 text-sm">
         <Spacer />
@@ -109,8 +112,6 @@ export default function Home() {
         </span>
         <Spacer />
       </div>
-
-
       
       {/* EXPERIENCE command */}
       <p className="text-sm text-[var(--muted)]">
@@ -122,11 +123,9 @@ export default function Home() {
       {/* EXPERIENCE output */}
       <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-5">
         <div className="text-sm leading-relaxed">
-          {/* Item 1 */}
-
         <Spacer />
 
-
+          {/* Item 1 */}
           <div>
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
               <div className="text-[var(--fg)]">
@@ -169,7 +168,8 @@ export default function Home() {
               <div className="text-[var(--fg)]">
                 <span className="emphasis">University of South Carolina</span>{" "}
                 <span className="text-[var(--muted)]">
-                  — Finance + Data Science
+                  — Finance + Data Science{" "}
+                  <span className="emphasis-accent">(GPA: 4.0)</span>
                 </span>
               </div>
               <div className="text-xs text-[var(--muted)]">
@@ -178,32 +178,106 @@ export default function Home() {
             </div>
 
             <div className="mt-3 space-y-1 text-[var(--muted)]">
+             
               <div>
                 <span className="opacity-70">{">"}</span> honors college
               </div>
+
               <div>
-                <span className="opacity-70">{">"}</span> men’s track &amp; field
-                (800m)
+                <span className="opacity-70">{">"}</span> carolina finance and investment association
               </div>
+
               <div>
-                <span className="opacity-70">{">"}</span> building fintech / credit-risk
-                projects + factor research
+                <span className="opacity-70">{">"}</span> gamecock artificial intelligence and machine learning
               </div>
+
             </div>
 
             <div className="mt-4 text-xs">
-              <span className="text-[var(--muted)]">focus:</span>{" "}
-              <span className="accent-muted">credit risk</span>
+              <span className="text-[var(--muted)]">honors:</span>{" "}
+              <span className="accent-muted">sec academic honor roll</span>
               <span className="text-[var(--muted)]"> · </span>
-              <span className="accent-muted">fintech</span>
+              <span className="accent-muted">president’s list (3x)</span>
               <span className="text-[var(--muted)]"> · </span>
-              <span className="accent-muted">statistics</span>
+              <span className="accent-muted">superlative award</span>
+            </div>
+
+            <div className="mt-4 text-xs">
+              <span className="text-[var(--muted)]">coursework:</span>{" "}
+              <span className="accent-muted">statistical methods</span>
+              <span className="text-[var(--muted)]"> · </span>
+              <span className="accent-muted">applied statisitcs</span>
+              <span className="text-[var(--muted)]"> · </span>
+              <span className="accent-muted">computing for data science</span>
+              <span className="text-[var(--muted)]"> · </span>
+              <span className="accent-muted">data analytics</span>
             </div>
 
             <Spacer />
 
 
           </div>
+        </div>
+      </div>
+
+
+      {/* SKILLS command */}
+      <p className="text-sm text-[var(--muted)]">
+      <span className="opacity-80">ricky@rickycircelli</span>
+      <span className="opacity-60">:~$</span>{" "}
+      <span className="text-[var(--fg)]">skills --matrix</span>
+      </p>
+
+      {/* SKILLS output */}
+      <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-5">
+        <div className="space-y-4 text-sm font-mono">
+        <Spacer />
+
+          {/* LANGUAGES */}          
+          <div className="grid grid-cols-[120px_1fr] gap-4">
+            <div className="text-[var(--fg)]">LANGUAGES</div>
+            <div className="space-y-1">
+              <SkillBar level={8} label="Python" />
+              <SkillBar level={7} label="SQL" />
+              <SkillBar level={7} label="R" />
+              <SkillBar level={5} label="Java" />
+            </div>
+          </div>
+          <Spacer />
+
+          {/* DATA / ML */}
+          <div className="grid grid-cols-[120px_1fr] gap-4">
+            <div className="text-[var(--fg)]">DATA / ML</div>
+            <div className="space-y-1">
+              <SkillBar level={7} label="Pandas" />
+              <SkillBar level={7} label="Scikit-learn" />
+              <SkillBar level={5} label="TensorFlow" />              
+              <SkillBar level={8} label="Power BI (PL-300)" />
+              <SkillBar level={8} label="Excel" />
+            </div>
+          </div>
+          <Spacer />
+
+          {/* WEB */}
+          <div className="grid grid-cols-[120px_1fr]">
+            <div className="text-[var(--fg)]">WEB</div>
+            <div className="space-y-1 ">
+              <SkillBar level={5} label="HTML" />
+              <SkillBar level={5} label="Next.js" />
+            </div>
+          </div>
+          <Spacer />
+
+          {/* TOOLS */}
+          <div className="grid grid-cols-[120px_1fr] gap-4">
+            <div className="text-[var(--fg)]">TOOLS</div>
+            <div className="space-y-1">
+              <SkillBar level={6} label="AWS (Cloud Practitioner)" />
+              <SkillBar level={8} label="Microsoft Office Suite" />
+            </div>
+          </div>
+          <Spacer />
+
         </div>
       </div>
 
