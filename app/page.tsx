@@ -28,8 +28,8 @@ export default function Home() {
         role=<a href="https://gamecocksonline.com/sports/track/roster/player/ricky-circelli/" className="text-[var(--fg)] hover:text-[var(--accent)]">
               student-athlete
             </a>{" "}
-        | focus=<span className="text-[var(--fg)]">finance</span>{" "}
-        | focus=<span className="text-[var(--fg)]">data-science</span>
+        | focus=<span className="text-[var(--fg)]">finance/data-science</span>{" "}
+        | interest=<span className="text-[var(--fg)]">fintech</span>
       </p>
     </div>
 
@@ -100,15 +100,17 @@ export default function Home() {
       {/* STATUS command */}
       <p className="text-sm text-[var(--muted)]">
         <span className="opacity-80">ricky@rickycircelli</span>
-        <span className="opacity-60">:~$</span> status
+        <span className="opacity-60">:~$</span>{" "}
+        <span className="text-[var(--fg)]">cat</span> status.txt
       </p>
+
 
       {/* STATUS output */}
       <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4 text-sm">
         <Spacer />
         <span className="opacity-60 text-[var(--fg)]">#</span>{" "}
         <span className="text-[var(--fg)]">
-          building and documenting projects while competing for south carolina men’s track & field
+          learning, building, and documenting projects while competing for south carolina men’s track & field
         </span>
         <Spacer />
       </div>
@@ -225,8 +227,9 @@ export default function Home() {
       <p className="text-sm text-[var(--muted)]">
       <span className="opacity-80">ricky@rickycircelli</span>
       <span className="opacity-60">:~$</span>{" "}
-      <span className="text-[var(--fg)]">skills --matrix</span>
+      <span>skills --matrix</span>
       </p>
+
 
       {/* SKILLS output */}
       <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-5">
@@ -283,17 +286,24 @@ export default function Home() {
 
       {/* CONTACT command */}
       <p className="text-sm text-[var(--muted)]">
-        <span className="opacity-80">ricky@rickycircelli</span>
-        <span className="opacity-60">:~$</span>{" "}
-        <span className="text-[var(--fg)]">echo</span>{" "}
-        <a
-          href="mailto:rickycircelli@gmail.com"
-          className="emphasis-accent underline decoration-[rgba(143,175,154,0.45)]"
-        >
-          rickycircelli@gmail.com
-        </a>
+          <span className="opacity-80">ricky@rickycircelli</span>
+          <span className="opacity-60">:~$</span>{" "}
+          <span className="text-[var(--fg)]">echo</span>{" "}
+          <span className="text-[var(--muted)]">$EMAIL</span>
       </p>
 
+      {/* CONTACT output */}
+      <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4">
+      <p className="text-sm mt-1 pl-4">
+          <a
+        href="mailto:rickycircelli@gmail.com"
+        className="emphasis-accent underline decoration-[rgba(143,175,154,0.45)]"
+        >
+        rickycircelli@gmail.com
+          </a>
+    </p>
+      </div>
+    <Spacer />
     </section>
   );
 }
