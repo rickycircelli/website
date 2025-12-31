@@ -3,10 +3,41 @@ import Link from "next/link";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Ricky Circelli",
-  description: "Finance + Data Science | Fintech, credit risk, analytics projects",
+
+export const metadata = {
+  title: "Ricky Circelli | Finance & Data Science Student-Athlete",
+  description:
+    "Student-athlete at the University of South Carolina focused on finance, data science, and fintech. Projects, experience, and technical skills.",
+  keywords: [
+    "Ricky Circelli",
+    "finance",
+    "data science",
+    "fintech",
+    "student athlete",
+    "machine learning",
+    "Python",
+  ],
+  openGraph: {
+    title: "Ricky Circelli",
+    description:
+      "Finance & Data Science student-athlete building fintech and data projects.",
+    url: "https://rickycircelli.com",
+    siteName: "Ricky Circelli",
+    images: [
+      {
+        url: "/og.png", //add later
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+
+    alternates: {
+      canonical: "https://rickycircelli.com",
+    }
+  },
 };
+
 
 export default function RootLayout({
   children,
