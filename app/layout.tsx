@@ -5,6 +5,7 @@ import "./globals.css";
 
 
 export const metadata = {
+  metadataBase: new URL("https://rickycircelli.com"),
   title: "Ricky Circelli",
   description:
     "Student-athlete at the University of South Carolina focused on fintech and data science. Projects, experience, and technical skills.",
@@ -23,6 +24,9 @@ export const metadata = {
       "Finance & Data Science student-athlete building fintech and data projects.",
     url: "https://rickycircelli.com",
     siteName: "Ricky Circelli",
+    icons: {
+      icon: "/favicon.ico",
+      },
     images: [
       {
         url: "/og.png", //add later
