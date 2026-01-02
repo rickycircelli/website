@@ -1,6 +1,13 @@
 import Spacer from "./components/Spacer";
 import SkillBar from "./components/SkillBar";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Ricky Circelli",
+  description:
+    "Student-athlete at the University of South Carolina focused on fintech and data science. Projects, experience, and technical skills."
+};
 
 export default function Home() {
   return (
@@ -240,9 +247,9 @@ export default function Home() {
           <div className="grid grid-cols-[120px_1fr] gap-4">
             <div className="text-[var(--fg)]">LANGUAGES</div>
             <div className="space-y-1">
-              <SkillBar level={8} label="Python" />
-              <SkillBar level={7} label="SQL" />
-              <SkillBar level={7} label="R" />
+              <SkillBar level={7} label="Python" />
+              <SkillBar level={6} label="SQL" />
+              <SkillBar level={6} label="R" />
               <SkillBar level={5} label="Java" />
             </div>
           </div>
@@ -255,8 +262,8 @@ export default function Home() {
               <SkillBar level={7} label="Pandas" />
               <SkillBar level={7} label="Scikit-learn" />
               <SkillBar level={5} label="TensorFlow" />              
-              <SkillBar level={8} label="Power BI (PL-300)" />
-              <SkillBar level={8} label="Excel" />
+              <SkillBar level={7} label="Power BI (PL-300)" />
+              <SkillBar level={7} label="Excel" />
             </div>
           </div>
           <Spacer />
@@ -265,8 +272,8 @@ export default function Home() {
           <div className="grid grid-cols-[120px_1fr]">
             <div className="text-[var(--fg)]">WEB</div>
             <div className="space-y-1 ">
-              <SkillBar level={5} label="HTML" />
-              <SkillBar level={5} label="Next.js" />
+              <SkillBar level={4} label="HTML" />
+              <SkillBar level={4} label="Next.js" />
             </div>
           </div>
           <Spacer />
@@ -276,7 +283,7 @@ export default function Home() {
             <div className="text-[var(--fg)]">TOOLS</div>
             <div className="space-y-1">
               <SkillBar level={6} label="AWS (Cloud Practitioner)" />
-              <SkillBar level={8} label="Microsoft Office Suite" />
+              <SkillBar level={7} label="Microsoft Office Suite" />
             </div>
           </div>
           <Spacer />

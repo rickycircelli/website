@@ -5,9 +5,9 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Ricky Circelli | Finance & Data Science Student-Athlete",
+  title: "Ricky Circelli",
   description:
-    "Student-athlete at the University of South Carolina focused on finance, data science, and fintech. Projects, experience, and technical skills.",
+    "Student-athlete at the University of South Carolina focused on fintech and data science. Projects, experience, and technical skills.",
   keywords: [
     "Ricky Circelli",
     "finance",
