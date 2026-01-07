@@ -1,19 +1,50 @@
-```bash
-npm run dev
+Personal website built with **Next.js (App Router)**, **React**, **TypeScript**, and **Tailwind CSS**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site is intentionally designed with a **terminal-inspired UI** to present my background, experience, projects, and technical skills in a way that reflects how I think and work.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Live site: [https://rickycircelli.com](https://rickycircelli.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Purpose
 
-## Learn More
+I built this site to:
 
-To learn more about Next.js:
+- Create a clean, fast personal site that feels technical but human
+- Showcase experience, projects, and skills without a traditional résumé layout
+- Learn React + Next.js by building something real from scratch
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [the Next.js GitHub repository](https://github.com/vercel/next.js)
+I learned **React and Next.js in about one week** and applied them directly by designing, implementing, and deploying this site end-to-end.
 
+## Tech Stack
 
-```
+- **Next.js (App Router)**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vercel**
+
+## Features
+
+- Terminal-style command/output layout
+- Custom skills matrix rendered with text-based progress bars
+- Projects pulled dynamically from Medium posts
+- Fully responsive and fast
+- SEO metadata, Open Graph support, and custom favicon
+
+## Projects via Medium Scraping
+
+The Projects page is generated dynamically by pulling my writing directly from Medium.
+
+Instead of manually maintaining a separate projects list, I use **web scraping via Medium’s RSS feed** to keep the site in sync with my published work.
+
+### How it works
+
+- Fetches my Medium RSS feed at runtime
+- Parses the full post content (`content:encoded`)
+- Filters posts marked with `[project]` in the title
+- Extracts structured metadata (description, tech stack, images) from the post body
+
+## Ideas for Improvement
+
+- Make terminal interactive
+- Terminal-style Open Graph preview image
+- Dark/light theme toggle
