@@ -6,9 +6,11 @@ import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://rickycircelli.com"),
+
   title: "Ricky Circelli",
   description:
     "Student-athlete at the University of South Carolina focused on fintech and data science. Projects, experience, and technical skills.",
+
   keywords: [
     "Ricky Circelli",
     "finance",
@@ -18,30 +20,32 @@ export const metadata = {
     "machine learning",
     "Python",
   ],
+
+  alternates: {
+    canonical: "https://rickycircelli.com",
+  },
+
+  icons: {
+    icon: "/favicon.png",
+  },
+
   openGraph: {
     title: "Ricky Circelli",
     description:
       "Finance & Data Science student-athlete building fintech and data projects.",
     url: "https://rickycircelli.com",
     siteName: "Ricky Circelli",
-    icons: {
-      icon: "/favicon.ico",
-      },
+    type: "website",
     images: [
       {
-        url: "/og.png", //add later
+        url: "/og.png", 
         width: 1200,
         height: 630,
+        alt: "Terminal-style personal website for Ricky Circelli",
       },
     ],
-    type: "website",
-
-    alternates: {
-      canonical: "https://rickycircelli.com",
-    }
   },
 };
-
 
 export default function RootLayout({
   children,
