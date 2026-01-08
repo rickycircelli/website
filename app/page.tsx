@@ -223,9 +223,32 @@ export default function Home() {
             </div>
 
             <Spacer />
-
-
           </div>
+
+          {/* Item 1 */}
+          <div>
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <div className="text-[var(--fg)]">
+                <span className="emphasis">Dubin Clark</span>{" "}
+                <span className="text-[var(--muted)]">
+                  — Private Equity Intern
+                </span>
+              </div>
+              <div className="text-xs text-[var(--muted)]">
+                Summer 2024 · Jacksonville, FL
+              </div>
+            </div>
+
+            <div className="mt-3 space-y-1 text-[var(--muted)]">
+              <div>
+                <span className="opacity-70">{">"}</span>{" "}
+                Created one-pagers, diligence memos, and financial models in Excel; took notes during client calls
+              </div>
+            </div>
+          </div>
+
+          <Spacer />
+
         </div>
       </div>
 
