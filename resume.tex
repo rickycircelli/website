@@ -1,0 +1,220 @@
+%-------------------------
+% Resume in Latex
+% Author : Ricky Circelli
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\usepackage[margin=0.4in,footskip=0.25in]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\localtextbulletone}{\textcolor{black}{\raisebox{.45ex}{\rule{.6ex}{.6ex}}}\hspace{8pt}}
+\renewcommand{\labelitemi}{\localtextbulletone}
+\newcommand{\resumeItem}[2]{
+  \item[\localtextbulletone]{
+    \textbf{#1}{: #2}\\
+  }\vspace{-4pt}
+}
+
+\newcommand{\resumeItemSimple}[1]{
+  \vspace{0pt}
+  \item[\localtextbulletone]{
+    {#1}\\
+  }\vspace{-4pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumePosition}[2]{
+    \vspace{8pt}
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+\newcommand{\experienceItemDivider}{
+  \vspace{5pt}
+}
+
+\newcommand{\resumeProject}[3]{
+  \vspace{4pt}
+  \textbf{#1} - \textit{#2} \hfill \textit{#3}\vspace{-8pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=18pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf
+  {\href{https://rickycircelli.com/}{\Large Ricky Circelli}} & \href{https://rickycircelli.com/}{rickycircelli.com} \\
+
+  % \href{mailto:rickycircelli8@gmail.com}{rickycircelli8@gmail.com} &
+  \href{mailto:rickycircelli@gmail.com}{rickycircelli8@gmail.com} &
+  \href{https://github.com/rickycircelli}{github.com/rickycircelli} \\
+
+  {(904) 465-6804} &
+  \href{https://www.linkedin.com/in/richardcircelli/}{linkedin.com/in/richardcircelli} \\
+\end{tabular*}
+\vspace{-6pt}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+    % \resumeSubheading
+    %   {Georgia Institute of Technology}{Atlanta, GA}
+    %   {Online Masters of Science in Computer Science, Specialization in Machine Learning}{Jan. 2025 -- Dec. 2027}
+    % \vspace{6pt}
+    \resumeSubheading
+      {University of South Carolina}{Columbia, SC}
+      {\begin{tabular}[t]{@{}l@{}}
+        Bachelor of Science; Major: Finance (Darla Moore School of Business) \\
+        Second Major: Data Science (College of Arts \& Sciences); GPA: 4.0
+      \end{tabular}}{Aug. 2024 -- May 2027}
+      \resumeItemListStart
+        \resumeItem{Honors and Involvement}
+          {President’s List (4x), CSC Academic All-District Team, SEC Academic Honor Roll, South Carolina Honors College}
+        \resumeItem{Relevant Coursework}
+         {Statistical Methods I \& II, Computing for Data Science, Data Analytics, Applied Statistics, Corporate Financial Analysis, Finance, Accounting, Commercial Law, Operations Management, Information Systems, Calculus II, Algorithmic Design I}
+         \resumeItem{Certification}
+         {IBM Data Science Professional Certificate (Python, SQL, Machine Learning, Data Visualization, Cloud Computing, Generative AI); Microsoft Power BI Data Analyst (PL-300); AWS Certified Cloud Practitioner; Claude Certified Architect (CCA-F)}
+      \resumeItemListEnd
+
+%-----------INTERCOLLEGIATE ATHLETICS-----------------
+\section{Intercollegiate Athletics}
+    \resumeSubheading
+      {University of South Carolina Men’s Track \& Field}{Columbia, SC}
+      {Student-Athlete}{Aug. 2024 - Present}
+      \resumeItemListStart
+        \resumeItemSimple
+          {Manage a full academic course load while training 25 hours per week as a mid-distance runner (800m, 1500m), including practice, competition, and travel}
+      \resumeItemListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+    % \resumeSubheading
+    %   {Lifted Platforms}{Jacksonville, FL}
+    %   {Software Engineer}{August 2022 - Present}
+    %   \resumeItemListStart
+    %     \resumeItemSimple
+    %       {Architect and lead project engineer for the startup Lifted, social media app for the gym.}
+    %     \resumeItemSimple
+    %       {Designed an edge-based serverless API deployed using Terraform for DynamoDB, Cognito, and Neo4j.}
+    %     \resumeItemSimple
+    %       {Created UX and built an Expo React Native app with a custom offline-first database sync integration.}
+    %   \resumeItemListEnd
+    % \experienceItemDivider
+    \resumeSubheading
+      {Ally Financial}{Charlotte, NC}
+      {Quantitative Modeling Intern}{May 2026 - August 2026}
+      \resumeItemListStart
+        \resumeItemSimple
+          {Built an end-to-end machine learning credit risk model for auto lending using 200,000+ loan applications and 2,000+ variables, developing the full modeling pipeline from raw data through model evaluation}
+        \resumeItemSimple
+          {Engineered features, performed Information Value (IV) analysis, correlation reduction, and reject inference across booked and unbooked application populations to improve predictive performance}
+        \resumeItemSimple
+          {Trained and evaluated XGBoost, LightGBM, CatBoost, and Random Forest models using AUC, KS, log loss, calibration, and SHAP explainability}
+      \resumeItemListEnd
+    \experienceItemDivider
+    \resumeSubheading
+      {Varsity Stack}{Columbia, SC}
+      {Founder}{February 2026 - Present}
+      \resumeItemListStart
+        \resumeItemSimple
+          {Building an AI-powered platform that helps teams manage athlete supplementation and amplifies nutritionists, integrating wearable and health data with large language models to deliver personalized recommendations}
+        \resumeItemSimple
+          {Selected as a Top 5 Finalist in the SEC Startup Competition; reaching 1,000+ app downloads, onboarding 2 teams, and generating recurring subscription revenue}
+      \resumeItemListEnd
+    \experienceItemDivider
+    \resumeSubheading
+      {Dubin Clark}{Jacksonville, FL}
+      {Private Equity Intern}{June 2024 - July 2024}
+      \resumeItemListStart
+        \resumeItemSimple
+          {Created one-pagers, diligence memos, and financial models in Excel; took notes during client calls}
+      \resumeItemListEnd
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeProject{AI Portfolio Optimizer}{Independent Project}{May 2025 - July 2025}
+    \resumeItemListStart
+      \resumeItemSimple
+        {Built an AI-powered robo-advisor using Python, Plaid APIs, and Monte Carlo simulation to generate personalized ETF portfolios based on investor risk profiles}
+      \resumeItemSimple
+        {Developed machine learning pipelines incorporating alternative financial data and generative AI to automate portfolio recommendations}
+    \resumeItemListEnd
+
+%-----------Leadership and Activities-----------------
+\section{Leadership \& Activities}
+    \resumeSubheading
+      {Gamecock Artificial Intelligence \& Machine Learning}{}
+      {Active Member}{November 2024 – Present}
+      \resumeItemListStart
+        \resumeItemSimple
+          {Active member building machine learning models and participating in applied AI competitions}
+      \resumeItemListEnd
+
+%--------ADDITIONAL INFORMATION------------
+
+\section{Technical Skills}
+  \resumeItemListStart
+    \resumeItem{Programming}
+      {Python, SQL, R}
+    \resumeItem{Machine Learning}
+      {XGBoost, LightGBM, CatBoost, Random Forest, scikit-learn, TensorFlow, SHAP}
+    \resumeItem{AI \& LLMs}
+      {OpenAI API, Claude API, Prompt Engineering, AI Agents, Retrieval-Augmented Generation (RAG)}
+    \resumeItem{Developer Tools}
+      {Claude Code, Cursor, Git, GitHub, VS Code, Jupyter}
+    \resumeItem{Data}
+      {Snowflake, Pandas, NumPy, Feature Engineering, ETL Pipelines}
+    \resumeItem{Analytics}
+      {Credit Risk Modeling, Predictive Modeling, Information Value (IV), Reject Inference, Calibration, Monte Carlo Simulation, Statistical Analysis}
+    \resumeItem{Cloud \& Platforms}
+      {AWS, Supabase, Railway, Power BI, Excel}
+  \resumeItemListEnd
+
+%-------------------------------------------
+\end{document}

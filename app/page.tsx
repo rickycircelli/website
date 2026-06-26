@@ -306,6 +306,8 @@ export default function Home() {
             <div className="text-[var(--fg)]">TOOLS</div>
             <div className="space-y-1">
               <SkillBar level={6} label="AWS (Cloud Practitioner)" />
+              <SkillBar level={7} label="Snowflake" />
+              <SkillBar level={7} label="Claude Code (CCA-F)" />
               <SkillBar level={7} label="Microsoft Office Suite" />
             </div>
           </div>
