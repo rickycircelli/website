@@ -140,7 +140,7 @@ export default function Home() {
               <div className="text-[var(--fg)]">
                 <span className="emphasis">Ally Financial</span>{" "}
                 <span className="text-[var(--muted)]">
-                  — Auto Originations Analytics
+                  — Quantitative Modeling Intern
                 </span>
               </div>
               <div className="text-xs text-[var(--muted)]">
@@ -151,11 +151,15 @@ export default function Home() {
             <div className="mt-3 space-y-1 text-[var(--muted)]">
               <div>
                 <span className="opacity-70">{">"}</span>{" "}
-                builds scorecards + loss models for auto origination decisions
+                built an end-to-end ml credit risk model for auto lending across 200k+ applications + 2k+ variables
               </div>
               <div>
                 <span className="opacity-70">{">"}</span>{" "}
-                supports pricing with lifetime loss estimation + risk insights
+                applied reject inference, iv analysis, and correlation reduction to refine a high-dimensional variable set
+              </div>
+              <div>
+                <span className="opacity-70">{">"}</span>{" "}
+                trained + evaluated xgboost, lightgbm, catboost, and random forest, validating with auc, ks, and shap
               </div>
             </div>
 
@@ -163,9 +167,52 @@ export default function Home() {
               <span className="text-[var(--muted)]">stack:</span>{" "}
               <span className="accent-muted">python</span>
               <span className="text-[var(--muted)]"> · </span>
-              <span className="accent-muted">sql</span>
+              <span className="accent-muted">snowflake</span>
               <span className="text-[var(--muted)]"> · </span>
-              <span className="accent-muted">power bi</span>
+              <span className="accent-muted">sql</span>
+            </div>
+          </div>
+
+          <Spacer />
+
+          {/* Varsity Stack */}
+          <div>
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+              <div className="text-[var(--fg)]">
+                <span className="emphasis">Varsity Stack</span>{" "}
+                <span className="text-[var(--muted)]">
+                  — Founder
+                </span>
+              </div>
+              <div className="text-xs text-[var(--muted)]">
+                2026–Present · Columbia, SC
+              </div>
+            </div>
+
+            <div className="mt-3 space-y-1 text-[var(--muted)]">
+              <div>
+                <span className="opacity-70">{">"}</span>{" "}
+                founded an ai-powered athlete supplement intelligence platform, leading product, engineering, and gtm
+              </div>
+              <div>
+                <span className="opacity-70">{">"}</span>{" "}
+                shipped full-stack mobile + web products with claude code, cursor, and llm apis
+              </div>
+              <div>
+                <span className="opacity-70">{">"}</span>{" "}
+                top 5 finalist in the sec startup competition; 1,000+ downloads and recurring subscription revenue
+              </div>
+            </div>
+
+            <div className="mt-4 text-xs">
+              <span className="text-[var(--muted)]">stack:</span>{" "}
+              <span className="accent-muted">claude code</span>
+              <span className="text-[var(--muted)]"> · </span>
+              <span className="accent-muted">llm apis</span>
+              <span className="text-[var(--muted)]"> · </span>
+              <span className="accent-muted">supabase</span>
+              <span className="text-[var(--muted)]"> · </span>
+              <span className="accent-muted">railway</span>
             </div>
           </div>
 
@@ -204,11 +251,11 @@ export default function Home() {
 
             <div className="mt-4 text-xs">
               <span className="text-[var(--muted)]">honors:</span>{" "}
+              <span className="accent-muted">president’s list (4x)</span>
+              <span className="text-[var(--muted)]"> · </span>
+              <span className="accent-muted">csc academic all-district</span>
+              <span className="text-[var(--muted)]"> · </span>
               <span className="accent-muted">sec academic honor roll</span>
-              <span className="text-[var(--muted)]"> · </span>
-              <span className="accent-muted">president’s list (3x)</span>
-              <span className="text-[var(--muted)]"> · </span>
-              <span className="accent-muted">superlative award</span>
             </div>
 
             <div className="mt-4 text-xs">
@@ -225,7 +272,7 @@ export default function Home() {
             <Spacer />
           </div>
 
-          {/* Item 1 */}
+          {/* Dubin Clark */}
           <div>
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
               <div className="text-[var(--fg)]">
@@ -266,37 +313,53 @@ export default function Home() {
         <div className="space-y-4 text-sm font-mono">
         <Spacer />
 
-          {/* LANGUAGES */}          
+          {/* LANGUAGES */}
           <div className="grid grid-cols-[120px_1fr] gap-4">
             <div className="text-[var(--fg)]">LANGUAGES</div>
             <div className="space-y-1">
               <SkillBar level={7} label="Python" />
               <SkillBar level={6} label="SQL" />
               <SkillBar level={6} label="R" />
-              <SkillBar level={5} label="Java" />
             </div>
           </div>
           <Spacer />
 
-          {/* DATA / ML */}
+          {/* MACHINE LEARNING */}
           <div className="grid grid-cols-[120px_1fr] gap-4">
-            <div className="text-[var(--fg)]">DATA / ML</div>
+            <div className="text-[var(--fg)]">ML</div>
             <div className="space-y-1">
-              <SkillBar level={7} label="Pandas" />
+              <SkillBar level={7} label="XGBoost" />
+              <SkillBar level={7} label="LightGBM" />
+              <SkillBar level={7} label="CatBoost" />
               <SkillBar level={7} label="Scikit-learn" />
-              <SkillBar level={5} label="TensorFlow" />              
+              <SkillBar level={6} label="SHAP" />
+              <SkillBar level={5} label="TensorFlow" />
+            </div>
+          </div>
+          <Spacer />
+
+          {/* GEN AI */}
+          <div className="grid grid-cols-[120px_1fr] gap-4">
+            <div className="text-[var(--fg)]">GEN AI</div>
+            <div className="space-y-1">
+              <SkillBar level={7} label="Claude API" />
+              <SkillBar level={6} label="OpenAI API" />
+              <SkillBar level={7} label="Prompt Engineering" />
+              <SkillBar level={6} label="AI Agents" />
+              <SkillBar level={6} label="RAG" />
+            </div>
+          </div>
+          <Spacer />
+
+          {/* DATA */}
+          <div className="grid grid-cols-[120px_1fr] gap-4">
+            <div className="text-[var(--fg)]">DATA</div>
+            <div className="space-y-1">
+              <SkillBar level={7} label="Snowflake" />
+              <SkillBar level={7} label="Pandas" />
+              <SkillBar level={7} label="NumPy" />
               <SkillBar level={7} label="Power BI (PL-300)" />
               <SkillBar level={7} label="Excel" />
-            </div>
-          </div>
-          <Spacer />
-
-          {/* WEB */}
-          <div className="grid grid-cols-[120px_1fr]">
-            <div className="text-[var(--fg)]">WEB</div>
-            <div className="space-y-1 ">
-              <SkillBar level={4} label="HTML" />
-              <SkillBar level={4} label="Next.js" />
             </div>
           </div>
           <Spacer />
@@ -305,10 +368,12 @@ export default function Home() {
           <div className="grid grid-cols-[120px_1fr] gap-4">
             <div className="text-[var(--fg)]">TOOLS</div>
             <div className="space-y-1">
-              <SkillBar level={6} label="AWS (Cloud Practitioner)" />
-              <SkillBar level={7} label="Snowflake" />
               <SkillBar level={7} label="Claude Code (CCA-F)" />
-              <SkillBar level={7} label="Microsoft Office Suite" />
+              <SkillBar level={7} label="Cursor" />
+              <SkillBar level={7} label="Git / GitHub" />
+              <SkillBar level={6} label="AWS (Cloud Practitioner)" />
+              <SkillBar level={6} label="Supabase" />
+              <SkillBar level={6} label="Railway" />
             </div>
           </div>
           <Spacer />
