@@ -179,7 +179,14 @@ export default function Home() {
           <div>
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
               <div className="text-[var(--fg)]">
-                <span className="emphasis">Varsity Stack</span>{" "}
+                <a
+                  href="https://varsitystack.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="emphasis hover:text-[var(--accent)]"
+                >
+                  Varsity Stack
+                </a>{" "}
                 <span className="text-[var(--muted)]">
                   — Founder
                 </span>
@@ -196,7 +203,7 @@ export default function Home() {
               </div>
               <div>
                 <span className="opacity-70">{">"}</span>{" "}
-                shipped full-stack mobile + web products with claude code, cursor, and llm apis
+                shipped full-stack mobile + web products with claude code and llm apis
               </div>
               <div>
                 <span className="opacity-70">{">"}</span>{" "}
@@ -369,7 +376,6 @@ export default function Home() {
             <div className="text-[var(--fg)]">TOOLS</div>
             <div className="space-y-1">
               <SkillBar level={7} label="Claude Code (CCA-F)" />
-              <SkillBar level={7} label="Cursor" />
               <SkillBar level={7} label="Git / GitHub" />
               <SkillBar level={6} label="AWS (Cloud Practitioner)" />
               <SkillBar level={6} label="Supabase" />
