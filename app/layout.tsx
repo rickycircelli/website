@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-import Link from "next/link";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 

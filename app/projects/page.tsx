@@ -43,9 +43,9 @@ export default async function ProjectsPage() {
         <div className="space-y-2 text-sm">
           <div>
             <span className="text-[var(--muted)]">|</span>{" "}
-            <a href="/" className="text-[var(--fg)] hover:text-[var(--accent)]">
+            <Link href="/" className="text-[var(--fg)] hover:text-[var(--accent)]">
               home
-            </a>
+            </Link>
           </div>
 
           <div>
