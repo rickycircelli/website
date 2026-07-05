@@ -5,21 +5,11 @@ import Link from "next/link";
 import type { Project } from "../lib/types";
 import { runCommand } from "../lib/commands";
 import HeroOutput from "./outputs/HeroOutput";
-import LinksOutput from "./outputs/LinksOutput";
-import StatusOutput from "./outputs/StatusOutput";
-import ExperienceOutput from "./outputs/ExperienceOutput";
-import SkillsOutput from "./outputs/SkillsOutput";
-import ContactOutput from "./outputs/ContactOutput";
 
 type Entry = { command: string; output: ReactNode };
 
 const INTRO: Entry[] = [
   { command: "whoami", output: <HeroOutput /> },
-  { command: "ls links/", output: <LinksOutput /> },
-  { command: "cat status.txt", output: <StatusOutput /> },
-  { command: "cat experience.log", output: <ExperienceOutput /> },
-  { command: "skills --matrix", output: <SkillsOutput /> },
-  { command: "echo $EMAIL", output: <ContactOutput /> },
 ];
 
 const TYPE_MS = 30;
