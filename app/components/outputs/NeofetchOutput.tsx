@@ -7,7 +7,6 @@ const ROWS: [string, string][] = [
   ["uptime", "since 2024"],
   ["gpa", "4.0"],
   ["sport", "track & field — usc"],
-  ["editor", "claude code"],
 ];
 
 export default function NeofetchOutput() {
