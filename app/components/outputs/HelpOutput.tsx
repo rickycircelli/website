@@ -11,7 +11,6 @@ const COMMANDS: [string, string][] = [
   ["contact", "email"],
   ["resume", "open resume.pdf"],
   ["track", "athlete page"],
-  ["neofetch", "system info"],
   ["clear", "clear the terminal"],
 ];
 
