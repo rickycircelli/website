@@ -24,10 +24,6 @@ export const metadata = {
     canonical: "https://rickycircelli.com",
   },
 
-  icons: {
-    icon: "/favicon.png",
-  },
-
   openGraph: {
     title: "Ricky Circelli",
     description:
@@ -44,6 +40,39 @@ export const metadata = {
       },
     ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Ricky Circelli",
+    description:
+      "Finance & Data Science student-athlete building fintech and data projects.",
+    images: ["/og.png"],
+  },
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ricky Circelli",
+  url: "https://rickycircelli.com",
+  email: "mailto:rickycircelli@gmail.com",
+  jobTitle: "Student-Athlete",
+  affiliation: {
+    "@type": "CollegeOrUniversity",
+    name: "University of South Carolina",
+  },
+  knowsAbout: [
+    "Finance",
+    "Data Science",
+    "Fintech",
+    "Machine Learning",
+    "Python",
+  ],
+  sameAs: [
+    "https://github.com/rickycircelli",
+    "https://www.linkedin.com/in/richardcircelli/",
+    "https://gamecocksonline.com/sports/track/roster/player/ricky-circelli/",
+  ],
 };
 
 export default function RootLayout({
@@ -54,6 +83,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${GeistMono.className} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <div className="mx-auto max-w-4xl px-3 py-6 sm:px-6 sm:py-10">
           <main className="mt-4 sm:mt-10">
             <TerminalWindow>{children}</TerminalWindow>
