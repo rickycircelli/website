@@ -12,7 +12,7 @@ import NeofetchOutput from "../components/outputs/NeofetchOutput";
 
 function Msg({ children }: { children: ReactNode }) {
   return (
-    <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-3 text-sm text-[var(--muted)]">
+    <div className="px-2 py-3 text-sm text-[var(--muted)]">
       {children}
     </div>
   );
@@ -74,6 +74,25 @@ export function runCommand(raw: string, ctx: CommandContext): CommandResult {
             gamecocksonline.com → ricky circelli
           </a>
         </Msg>
+      );
+    case "gamecock":
+    case "gamecocks":
+    case "cocky":
+      return (
+        <div className="px-2 py-4 text-sm leading-snug">
+          <pre className="whitespace-pre" style={{ color: "#c94f5d" }}>
+{String.raw`        ,~~.
+       (  9 )-_,
+  (\___ )=='-'
+   \ .   ) )
+    \ '-' /
+  ~'`}<span className="text-[var(--muted)]">{String.raw`~"~"~`}</span>{String.raw`'~'
+`}
+          </pre>
+          <p className="mt-2 text-[var(--fg)]">
+            forever to thee. <span className="text-[var(--muted)]">— go gamecocks 🐔</span>
+          </p>
+        </div>
       );
     case "sudo":
       return <Msg>nice try. this incident will be reported.</Msg>;
