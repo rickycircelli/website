@@ -11,7 +11,7 @@ const ROWS: [string, string][] = [
 
 export default function NeofetchOutput() {
   return (
-    <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4 text-sm">
+    <div className="px-2 py-4 text-sm">
       <Spacer />
       <div className="flex flex-wrap gap-x-8 gap-y-3">
         <pre className="text-[var(--accent)] leading-tight text-xs">{String.raw`

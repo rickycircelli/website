@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
-import Link from "next/link";
 import type { Project } from "../lib/types";
 import { runCommand } from "../lib/commands";
 import HeroOutput from "./outputs/HeroOutput";
@@ -14,16 +13,10 @@ const INTRO: Entry[] = [
 
 const TYPE_MS = 30;
 
-function PromptPrefix({ home }: { home?: boolean }) {
+function PromptPrefix() {
   return (
     <>
-      {home ? (
-        <Link href="/" className="opacity-80 hover:text-[var(--accent)] transition-colors">
-          ricky@rickycircelli
-        </Link>
-      ) : (
-        <span className="opacity-80">ricky@rickycircelli</span>
-      )}
+      <span className="opacity-80">ricky@rickycircelli</span>
       <span className="opacity-60">:~$</span>{" "}
     </>
   );
@@ -145,7 +138,7 @@ export default function Terminal({ projects }: { projects: Project[] }) {
       {entries.map((entry, i) => (
         <div key={i}>
           <p className="text-sm text-[var(--muted)]">
-            <PromptPrefix home={i === 0 && phase !== "animating"} />
+            <PromptPrefix />
             <span className="text-[var(--fg)]">{entry.command}</span>
           </p>
           {entry.output}

@@ -2,16 +2,9 @@ import Spacer from "../Spacer";
 
 export default function LinksOutput() {
   return (
-    <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4">
+    <div className="px-2 py-4">
       <div className="space-y-2 text-sm">
         <Spacer />
-
-        <div>
-          <span className="text-[var(--muted)]">|</span>{" "}
-          <a href="/projects" className="text-[var(--fg)] hover:text-[var(--accent)]">
-            projects
-          </a>
-        </div>
 
         <div>
           <span className="text-[var(--muted)]">|</span>{" "}

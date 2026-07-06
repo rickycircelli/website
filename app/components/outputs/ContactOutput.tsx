@@ -1,6 +1,6 @@
 export default function ContactOutput() {
   return (
-    <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4">
+    <div className="px-2 py-4">
       <p className="text-sm mt-1 pl-4">
         <a
           href="mailto:rickycircelli@gmail.com"

@@ -1,6 +1,6 @@
 export default function HeroOutput() {
   return (
-    <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4">
+    <div className="px-2 py-4">
       <h1 className="text-lg sm:text-xl font-medium text-[var(--fg)]">
         hi, i’m ricky.
       </h1>

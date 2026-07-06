@@ -17,7 +17,7 @@ const COMMANDS: [string, string][] = [
 
 export default function HelpOutput() {
   return (
-    <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4 text-sm">
+    <div className="px-2 py-4 text-sm">
       <Spacer />
       <div className="space-y-1">
         {COMMANDS.map(([cmd, desc]) => (

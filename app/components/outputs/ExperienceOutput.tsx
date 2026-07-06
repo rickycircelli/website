@@ -2,7 +2,7 @@ import Spacer from "../Spacer";
 
 export default function ExperienceOutput() {
   return (
-    <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-5">
+    <div className="px-2 py-5">
       <div className="text-sm leading-relaxed">
         <Spacer />
 

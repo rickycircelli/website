@@ -3,7 +3,7 @@ import SkillBar from "../SkillBar";
 
 export default function SkillsOutput() {
   return (
-    <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-5">
+    <div className="px-2 py-5">
       <div className="space-y-4 text-sm font-mono">
         <Spacer />
 

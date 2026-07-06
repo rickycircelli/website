@@ -1,4 +1,5 @@
 import { GeistMono } from "geist/font/mono";
+import TerminalWindow from "./components/TerminalWindow";
 import "./globals.css";
 
 
@@ -53,15 +54,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${GeistMono.className} antialiased`}>
-        <div className="mx-auto max-w-3xl px-6 py-10">
-          
-        
-          <main className="mt-10">{children}</main>
-
-          <footer className="mt-16 text-xs text-[var(--muted)] opacity-60">
-            © {new Date().getFullYear()} Ricky Circelli
-          </footer>
-          
+        <div className="mx-auto max-w-4xl px-3 py-6 sm:px-6 sm:py-10">
+          <main className="mt-4 sm:mt-10">
+            <TerminalWindow>{children}</TerminalWindow>
+          </main>
         </div>
       </body>
     </html>

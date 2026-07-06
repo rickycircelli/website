@@ -4,14 +4,11 @@ import type { Project } from "../../lib/types";
 
 export default function ProjectsOutput({ projects }: { projects: Project[] }) {
   return (
-    <div className="border-t border-b border-[var(--border)] bg-[var(--panel)]/60 px-6 py-4">
+    <div className="px-2 py-4">
       <Spacer />
       <div className="text-sm leading-relaxed">
         {projects.length === 0 ? (
-          <span className="text-[var(--muted)]">
-            no projects loaded — see{" "}
-            <a href="/projects" className="text-[var(--fg)] hover:text-[var(--accent)]">/projects</a>
-          </span>
+          <span className="text-[var(--muted)]">no projects loaded — try again later</span>
         ) : (
           projects.map((p) => <ProjectRow key={p.link} {...p} />)
         )}
