@@ -80,13 +80,23 @@ export function runCommand(raw: string, ctx: CommandContext): CommandResult {
     case "cocky":
       return (
         <div className="px-2 py-4 text-sm leading-snug">
-          <pre className="whitespace-pre" style={{ color: "#c94f5d" }}>
-{String.raw`        ,~~.
-       (  9 )-_,
-  (\___ )=='-'
-   \ .   ) )
-    \ '-' /
-  ~'`}<span className="text-[var(--muted)]">{String.raw`~"~"~`}</span>{String.raw`'~'
+          <pre className="whitespace-pre overflow-x-auto text-xs sm:text-sm" style={{ color: "#c94f5d" }}>
+{String.raw`     ,~.
+  ,-'__ '-,
+ {,-'  '. }              ,')
+,( a )   '-.__         ,',')~,
+<=.) (         '-.__,==' ' ' '}
+  (   )                      /)
+   '-'\   ,                    )
+       |  \        '~.        /
+       \   '._        \      /
+        \     '._____,'    ,'
+         '-.             ,'
+            '-._     _,-'
+                77jj'
+               //_||
+            __//--'/'
+          ,--'/'  '
 `}
           </pre>
           <p className="mt-2 text-[var(--fg)]">
