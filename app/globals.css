@@ -98,39 +98,18 @@ body {
   background: rgba(143, 175, 154, 0.28);
 }
 
-a {
-  text-underline-offset: 3px;
-}
+/* in @layer base so Tailwind utility classes (e.g. text-[var(--fg)])
+   on individual links can override these defaults */
+@layer base {
+  a {
+    text-underline-offset: 3px;
+    color: var(--muted);
+    text-decoration: none;
+  }
 
-a {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--accent);
-}
-
-header a {
-  color: var(--fg);
-}
-
-header a:hover {
-  color: var(--accent);
-}
-
-header a.nav-resume {
-  color: var(--accent);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-decoration: underline;
-  text-decoration-color: rgba(143, 175, 154, 0.45);
-  text-underline-offset: 4px;
-}
-
-header a.nav-resume:hover {
-  color: var(--accent);
-  opacity: 0.9;
+  a:hover {
+    color: var(--accent);
+  }
 }
 
 .accent {
