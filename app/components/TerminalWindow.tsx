@@ -40,7 +40,15 @@ export default function TerminalWindow({ children }: { children: React.ReactNode
   // null = window sits in the normal page flow; set = floating fixed window
   const [float, setFloat] = useState<FloatPos | null>(null);
   const [dragging, setDragging] = useState(false);
-  const dragRef = useRef<{ startX: number; startY: number; baseLeft: number; baseTop: number } | null>(null);
+  const dragRef = useRef<{
+    startX: number;
+    startY: number;
+    baseLeft: number;
+    baseTop: number;
+    width: number;
+    dx: number;
+    dy: number;
+  } | null>(null);
   const windowRef = useRef<HTMLDivElement>(null);
   const rafRef = useRef(0);
 
@@ -105,6 +113,9 @@ export default function TerminalWindow({ children }: { children: React.ReactNode
       startY: e.clientY,
       baseLeft: rect.left,
       baseTop: rect.top,
+      width: rect.width,
+      dx: 0,
+      dy: 0,
     };
     e.currentTarget.setPointerCapture(e.pointerId);
     setDragging(true);
@@ -117,17 +128,31 @@ export default function TerminalWindow({ children }: { children: React.ReactNode
     let top = d.baseTop + (e.clientY - d.startY);
     // full viewport range, but the title bar always stays grabbable:
     // 40px visible horizontally, bar never above/below the screen
-    left = Math.min(Math.max(left, 40 - (float?.width ?? 0)), window.innerWidth - 40);
+    left = Math.min(Math.max(left, 40 - d.width), window.innerWidth - 40);
     top = Math.min(Math.max(top, 0), window.innerHeight - 44);
+    d.dx = left - d.baseLeft;
+    d.dy = top - d.baseTop;
+    // move on the compositor only — no React render or layout per frame
     cancelAnimationFrame(rafRef.current);
-    rafRef.current = requestAnimationFrame(() =>
-      setFloat((f) => (f ? { ...f, left, top } : f))
-    );
+    rafRef.current = requestAnimationFrame(() => {
+      const el = windowRef.current;
+      const dd = dragRef.current;
+      if (el && dd) el.style.transform = `translate3d(${dd.dx}px, ${dd.dy}px, 0)`;
+    });
   };
 
   const endDrag = () => {
+    const d = dragRef.current;
     dragRef.current = null;
     setDragging(false);
+    cancelAnimationFrame(rafRef.current);
+    const el = windowRef.current;
+    if (el) el.style.transform = "";
+    if (d && (d.dx || d.dy)) {
+      setFloat((f) =>
+        f ? { ...f, left: d.baseLeft + d.dx, top: d.baseTop + d.dy } : f
+      );
+    }
   };
 
   const resetHome = () => {
@@ -142,7 +167,14 @@ export default function TerminalWindow({ children }: { children: React.ReactNode
         maximized
           ? undefined
           : float
-          ? { position: "fixed", left: float.left, top: float.top, width: float.width, zIndex: 40 }
+          ? {
+              position: "fixed",
+              left: float.left,
+              top: float.top,
+              width: float.width,
+              zIndex: 40,
+              willChange: dragging ? "transform" : undefined,
+            }
           : undefined
       }
       className={

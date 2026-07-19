@@ -27,11 +27,15 @@ export default function ExperienceOutput() {
             </div>
             <div>
               <span className="opacity-70">{">"}</span>{" "}
-              applied reject inference, iv analysis, and correlation reduction to refine a high-dimensional variable set
+              applied reject inference to correct selection bias and iv analysis to cut the variable set to its most predictive drivers
             </div>
             <div>
               <span className="opacity-70">{">"}</span>{" "}
               trained + evaluated xgboost, lightgbm, catboost, and random forest, validating with auc, ks, and shap
+            </div>
+            <div>
+              <span className="opacity-70">{">"}</span>{" "}
+              automated loan decisioning with the model — 4x more auto-approvals at lower risk, manual review cut from 80% to 20%
             </div>
           </div>
 
