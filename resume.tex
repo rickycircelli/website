@@ -69,16 +69,16 @@
     \end{tabular*}\vspace{-8pt}
 }
 \newcommand{\experienceItemDivider}{
-  \vspace{5pt}
+  \vspace{8pt}
 }
 
 \newcommand{\resumeProject}[3]{
   \vspace{4pt}
-  \textbf{#1} - \textit{#2} \hfill \textit{#3}\vspace{-8pt}
+  \textbf{#1} - \textit{#2} \hfill \textit{#3}\vspace{-2pt}
 }
 
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=18pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=18pt,topsep=2pt,itemsep=2pt,parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 
 %-------------------------------------------
@@ -159,6 +159,8 @@
           {Reduced a 2,000+ variable set to its most predictive drivers via feature engineering, Information Value (IV) analysis, and correlation reduction, lowering model complexity without sacrificing accuracy}
         \resumeItemSimple
           {Trained and evaluated XGBoost, LightGBM, CatBoost, and Random Forest models in Python and Snowflake, validating performance with AUC, KS, log loss, calibration, and SHAP explainability}
+        \resumeItemSimple
+          {Automated loan application decisioning with the model, approving 4x more loans automatically at lower risk while cutting manual review from 80\% to 20\% of applications}
       \resumeItemListEnd
     \experienceItemDivider
     \resumeSubheading
@@ -166,11 +168,11 @@
       {Founder}{February 2026 - Present}
       \resumeItemListStart
         \resumeItemSimple
-          {Founded and built an AI-powered athlete supplement intelligence platform, leading product, engineering, and go-to-market end to end}
+          {Founded an AI-powered athlete supplement intelligence platform, leading product, engineering, and go-to-market}
         \resumeItemSimple
           {Shipped full-stack mobile and web products to production solo, using Claude Code, LLM APIs, and AI-assisted workflows to cut build timelines from months to weeks}
         \resumeItemSimple
-          {Integrated wearable and health data with large language models to deliver personalized supplement recommendations and track their impact on athlete performance}
+          {Integrated wearable and health data with large language models to deliver personalized supplement recommendations}
         \resumeItemSimple
           {Named Top 5 Finalist in the SEC Startup Competition while growing past 1,000+ downloads, onboarding 2 teams, and converting paying users into recurring subscription revenue}
       \resumeItemListEnd
