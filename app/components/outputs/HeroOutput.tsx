@@ -31,6 +31,17 @@ export default function HeroOutput() {
             <span className="text-[var(--accent)]">{"interest".padEnd(10, " ")}</span>
             <span className="text-[var(--fg)]">fintech</span>
           </div>
+          <div className="whitespace-pre">
+            <span className="text-[var(--accent)]">{"startup".padEnd(10, " ")}</span>
+            <a
+              href="https://varsitystack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--fg)] hover:text-[var(--accent)]"
+            >
+              varsitystack
+            </a>
+          </div>
         </div>
       </div>
     </div>
