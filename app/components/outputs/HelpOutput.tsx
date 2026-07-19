@@ -6,7 +6,7 @@ const COMMANDS: [string, string][] = [
   ["experience", "work + school history"],
   ["skills", "skill matrix"],
   ["projects", "things i've built"],
-  ["links", "github / linkedin / resume"],
+  ["links", "github / linkedin"],
   ["status", "what i'm up to"],
   ["contact", "email"],
   ["resume", "open resume.pdf"],

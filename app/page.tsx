@@ -86,8 +86,6 @@ export default async function Home() {
           <a href="https://github.com/rickycircelli">GitHub</a>
           {" · "}
           <a href="https://www.linkedin.com/in/richardcircelli/">LinkedIn</a>
-          {" · "}
-          <a href="/resume/ricky_circelli_resume.pdf">Resume</a>
         </p>
       </section>
     </>

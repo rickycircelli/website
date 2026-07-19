@@ -30,17 +30,6 @@ export default function LinksOutput() {
           </a>
         </div>
 
-        <div>
-          <span className="text-[var(--muted)]">|</span>{" "}
-          <a
-            href="/resume/ricky_circelli_resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="emphasis-accent underline decoration-[rgba(143,175,154,0.45)]"
-          >
-            resume.pdf
-          </a>
-        </div>
 
         <Spacer />
       </div>
