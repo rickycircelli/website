@@ -26,6 +26,8 @@ export default function SkillsOutput() {
             <SkillBar level={7} label="LightGBM" />
             <SkillBar level={7} label="CatBoost" />
             <SkillBar level={7} label="Scikit-learn" />
+            <SkillBar level={7} label="Logistic Regression" />
+            <SkillBar level={7} label="Linear Regression" />
             <SkillBar level={6} label="SHAP" />
             <SkillBar level={5} label="TensorFlow" />
           </div>
@@ -63,6 +65,7 @@ export default function SkillsOutput() {
           <div className="text-[var(--fg)]">TOOLS</div>
           <div className="space-y-1">
             <SkillBar level={7} label="Claude Code (CCA-F)" />
+            <SkillBar level={7} label="Codex" />
             <SkillBar level={7} label="Git / GitHub" />
             <SkillBar level={6} label="AWS (Cloud Practitioner)" />
             <SkillBar level={6} label="Supabase" />
