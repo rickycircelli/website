@@ -81,7 +81,7 @@ export default async function Home() {
 
         <h2>Contact</h2>
         <p>
-          Email: <a href="mailto:rickycircelli@gmail.com">rickycircelli@gmail.com</a>
+          Email: <a href="mailto:rickycircelli8@gmail.com">rickycircelli8@gmail.com</a>
           {" · "}
           <a href="https://github.com/rickycircelli">GitHub</a>
           {" · "}

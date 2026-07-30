@@ -55,7 +55,7 @@ const personJsonLd = {
   "@type": "Person",
   name: "Ricky Circelli",
   url: "https://rickycircelli.com",
-  email: "mailto:rickycircelli@gmail.com",
+  email: "mailto:rickycircelli8@gmail.com",
   jobTitle: "Student-Athlete",
   affiliation: {
     "@type": "CollegeOrUniversity",
